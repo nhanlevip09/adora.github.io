@@ -1,0 +1,74 @@
+/* CSS Document */
+
+body {
+	color: #676765;
+	background: #f5f4f2;
+	width: 1400px;
+	margin: 0 auto;
+	font-size: 14px;
+}
+/*== header ==*/
+header {
+	height: 180px;
+	width: 100%;
+	background-image: url(../images/bg_header.jpg);
+	position: relative;
+}
+.space {
+	height: 65px;
+}
+.navigation ul {
+	list-style-type: none;
+	background: #b80d7f;
+}
+.navigation ul li {
+	display: inline-block;
+	min-width: 130px;
+	height: 30px;
+	line-height: 30px;
+	position: relative;
+}
+.navigation ul li a {
+	color: #f1f1f1;
+	text-decoration: none;
+	padding: 0 20px;
+	display: block;
+}
+.navigation ul li a:hover {
+	background: #f1f1f1;
+	color: #b80d7f
+}
+.navigation ul li .submenu {
+	display: none;
+	position: absolute;
+}
+.submenu li {
+	border-bottom: 1px dashed #f1f1f1;
+	text-align: left;
+}
+.submenu li a {
+	min-width: 320px;
+}
+.navigation ul li:hover .submenu {
+	display: block;
+}
+.noneborder {
+	border-bottom: none;
+}
+.hotline {
+	height: 40px;
+	width: 120px;
+	border-radius: 0% 0 0 0%;
+	position: absolute;
+	right: 0;
+	top: 40px;
+}
+.hotline img {
+	width: 39px;
+	height: 39px;
+}
+.hotline h4 {
+	color: #f1f1f1;
+	margin-top: 6px;
+}
+/*== slider == */
