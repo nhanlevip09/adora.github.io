@@ -8,8 +8,35 @@
 <link rel="stylesheet" href="css/fontawesome-all.min.css">
 <link rel="stylesheet" href="css/fonts.css" type="text/css">
 </head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
 
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
 <body>
+<!-- =============== HEADER =============== -->
 <header>
   <div class="hotline fleft">
     <div class="fleft" style="height: 40px;
@@ -19,31 +46,216 @@
     <div class="fright" style="height: 40px;
 	width:80px;
 	background: #b80d7f;
-	"></div>
-  </div> <center>
-  <nav class="navigation">
- 
-    <img src="images/logo.png"  />
-    <ul>
-      <li class="active"><a href="#">TRANG CHỦ</a></li>
-      <li><a href="#">DỊCH VỤ</a>
-        <ul class="submenu">
-          <li><a href="#">ĐIỀU TRỊ MẶT CN CAO</a></li>
-          <li><a href="#">TRẺ HÓA LÀN DA BẰNG PRP</a></li>
-          <li><a href="#">SUPER YOUNG SKIN TẾ BÀO TƯƠI</a></li>
-          <li><a href="#">TRẮNG DA, TRẺ HÓA FOREVER YOUNG</a></li>
-          <li><a href="#" class="noneborder">TRỊ MỤN CÔNG NGHỆ CAO</a></li>
-        </ul>
-      </li>
-      <li><a href="#">TƯ VẤN</a></li>
-      <li><a href="#">PHẨU THUẬT THẨM MỸ</a></li>
-      <li><a href="#">KHUYẾN MÃI</a></li>
-      <li><a href="#">BẢNG GIÁ</a></li>
-      <li><a href="#">LÊN HỆ</a></li>
-    </ul>
+	">
+      <h4>HOTLINE<br>
+        <strong>084 866 5699</strong></h4>
+    </div>
+  </div>
+  <center>
+    <nav class="navigation"> <img src="images/logo.png"  />
+      <ul>
+        <li class="active"><a href="#">TRANG CHỦ</a></li>
+        <li><a href="#">DỊCH VỤ</a>
+          <ul class="submenu">
+            <li><a href="#">ĐIỀU TRỊ MẶT CN CAO</a></li>
+            <li><a href="#">TRẺ HÓA LÀN DA BẰNG PRP</a></li>
+            <li><a href="#">SUPER YOUNG SKIN TẾ BÀO TƯƠI</a></li>
+            <li><a href="#">TRẮNG DA, TRẺ HÓA FOREVER YOUNG</a></li>
+            <li><a href="#" class="noneborder">TRỊ MỤN CÔNG NGHỆ CAO</a></li>
+          </ul>
+        </li>
+        <li><a href="#">TƯ VẤN</a></li>
+        <li><a href="#">PHẨU THUẬT THẨM MỸ</a></li>
+        <li><a href="#">KHUYẾN MÃI</a></li>
+        <li><a href="#">BẢNG GIÁ</a></li>
+        <li><a href="#">LÊN HỆ</a></li>
+      </ul>
     </nav>
   </center>
 </header>
-<div class="slider"></div>
+<!-- =============== SLIDER =============== -->
+<div class="slider"> <img src="images/slider1.jpg" class="img-res" /></div>
+<!-- =============== TIN TỨC =============== -->
+<div class="container"> <img src="images/bg_sec.png" class="img-res" />
+  <div class="tintuc">
+    <div class="tintuc1 col-04">
+      <h2>TIN TỨC</h2>
+      <img src="images/a-tintuc.jpg" class="img-res" />
+      <h4>Làm đẹp chẳng lo giá cùng Adora! </h4>
+      <p>Thỏa sức làm đẹp cùng viện thẩm mỹ Adora với các chương trình ưu đãi cực hấp dẫn trong tháng 8, nhận khuyến mãi khủng tới 50%!</p>
+    </div>
+    <div class="tintuc2 col-04">
+      <div class="tintuc22"><a href="#"><img src="images/tt1.jpg" /></a>
+        <p><a href="#" class="act">SIÊU COMBO THẨM MỸ: MŨI S-LINE + MÍ MẮT NAI CHỈ VỚI 24 TRIỆU</a></p>
+      </div>
+      <div class="clearfix"> </div>
+      <div class="tintuc22"><a href="#"><img src="images/tt2.jpg" /></a>
+        <p ><a href="#" >Đăng ký trải nghiệm CN PRP – Thần dược cho làn da</a></p>
+      </div>
+      <div class="clearfix"> </div>
+      <div class="tintuc22"><a href="#"><img src="images/tt3.jpg" /></a>
+        <p ><a href="#" >Nhờ nâng mũi, 9x lập tức “thăng hạng” nhan sắc đến không nhận ra </a></p>
+      </div>
+      <div class="clearfix"> </div>
+      <div class="tintuc22"><a href="#"><img src="images/tt4.jpg" /></a>
+        <p ><a href="#" > 7 bước dưỡng trắng làm say lòng Hoa Hậu Trúc Diễm</a></p>
+      </div>
+      <div class="clearfix"> </div>
+    </div>
+    <div class="cauchuyenkhachhang col-04">
+      <h2>CÂU CHUYỆN KHÁCH HÀNG</h2>
+      <div class="dd"> <a href="#" class="col-00"><img src="images/kh1.jpg" class="img-res" /></a><a href="#" class="col-00"><img src="images/kh2.jpg" class="img-res" /></a><a href="#" class="col-00"><img src="images/kh3.jpg" class="img-res" /></a><a href="#" class="col-00"><img src="images/kh4.jpg" class="img-res" /></a><a href="#" class="col-00"><img src="images/kh5.jpg" class="img-res" /></a><a href="#" class="col-00"><img src="images/kh6.jpg" class="img-res" /></a> </div>
+    </div>
+  </div>
+  <img src="images/bg_sec.png" class="img-res" /> 
+  <!-- =============== DỊCH VỤ =============== -->
+  <div class="dichvu">
+    <center>
+      <h1>DỊCH VỤ YÊU THÍCH CỦA TUẦN</h1>
+      <img src="images/dvu.jpg" class="fleft"  />
+      <div class="col-08 fleft">
+        <h3>NÂNG MŨI S-LINE CÔNG NGHỆ HÀN QUỐC</h3>
+        <p>60% phụ nữ Hàn Quốc yêu thích dịch vụ thẩm mỹ nâng mũi S-line bởi đây là thủ thuật mang lại cho bạn dáng mũi với độ võng tự nhiên, cân đối với khuôn mặt, đặc biệt với phụ nữ Châu Á.  Công nghệ nâng mũi S-line tại hệ thống Viện thẩm mỹ 5 sao Adora sẽ làm hài lòng khách hàng. </p>
+        <strong><a href="#">XEM THÊM</a></strong></div>
+    </center>
+  </div>
+  <div class="space"></div>
+  <!-- =============== CÔNG NGHỆ LÀM ĐẸP =============== -->
+  <div class="cnlamdep">
+    <center>
+      <h1>CÔNG NGHỆ LÀM ĐẸP CAO CẤP</h1>
+    </center>
+    <div class="cn col-03" > <a href="#"><img src="images/lamdep1.jpg" class="img-res" /></a>
+      <div class="cninfo">
+        <center>
+          <a href="#">CN Tế bào tươi & siêu Vitamin Super Young Skin</a>
+        </center>
+      </div>
+    </div>
+    <div class="cn col-03"> <a href="#"><img src="images/lamdep2.jpg" class="img-res" /></a>
+      <div class="cninfo">
+        <center>
+          <a href="#">Trị nám Spectra Laser Hi-line</a>
+        </center>
+      </div>
+    </div>
+    <div class="cn col-03"> <a href="#"><img src="images/lamdep3.jpg" class="img-res" /></a>
+      <div class="cninfo">
+        <center>
+          <a href="#">Nâng cơ, trẻ hóa Ultherapy</a>
+        </center>
+      </div>
+    </div>
+    <div class="cn col-03"> <a href="#"><img src="images/lamdep4.jpg" class="img-res" /></a>
+      <div class="cninfo">
+        <center>
+          <a href="#">Soi trắng da Super White 6D</a>
+        </center>
+      </div>
+    </div>
+    <div class="cn col-03"> <a href="#"><img src="images/lamdep5.jpg" class="img-res" /></a>
+      <div class="cninfo">
+        <center>
+          <a href="#">Cấy tế bào gốc nuôi trắng da toàn thân</a>
+        </center>
+      </div>
+    </div>
+    <div class="cn col-03"> <a href="#"><img src="images/lamdep6.jpg" class="img-res" /></a>
+      <div class="cninfo">
+        <center>
+          <a href="#">Giảm béo tạo phom Ultra 3D S-Line</a>
+        </center>
+      </div>
+    </div>
+    <div class="cn col-03"> <a href="#"><img src="images/lamdep4-17.jpg" class="img-res" /></a>
+      <div class="cninfo">
+        <center>
+          <a href="#">Trắng da, trẻ hóa Forever Young</a>
+        </center>
+      </div>
+    </div>
+    <div class="cn col-03"> <a href="#"><img src="images/lamdep8.jpg" class="img-res" /></a>
+      <div class="cninfo">
+        <center>
+          <a href="#">Nâng ngực nội soi Công nghệ mới nhất</a>
+        </center>
+      </div>
+    </div>
+  </div>
+  <!-- =============== VIDEO, HÌNH ÀNH, KHUYẾN MÃI =============== --> 
+  <img src="images/bg_sec.png" class="img-res" />
+  <div class="vps">
+    <div class="vid col-04">
+      <h2>VIDEO</h2>
+      <img src="images/video.jpg" class="img-res" />
+      <p>XEM THÊM</p>
+    </div>
+    <div class="pic col-04">
+      <h2>HÌNH ẢNH</h2>
+      <img src="images/hinhanh.jpg" class="img-res" />
+      <p>XEM THÊM</p>
+    </div>
+    <div class="km col-04">
+      <h2>KHUYẾN MÃI</h2>
+      <img src="images/khuyenmai.jpg" class="img-res" />
+      <p>XEM THÊM</p>
+    </div>
+  </div>
+  <!-- =============== TƯ VẤN =============== --> 
+ <img src="images/bg_sec.png" class="img-res" />
+  <div class="tuvan">
+    <div class="tuvan1 col-04">
+      <h2>TƯ VẤN</h2>
+      <img src="images/tuvan.jpg"  /></div>
+    <div class="tuvan2 col-04">
+      <div class="tuvan22">
+        <h4><i class="fas fa-chevron-circle-right"></i> CÁCH LÀM GIẢM NẾP NHĂN Ở MẮT CỰC HIỆU QUẢ</h4>
+      </div>
+      <div class="tuvan22">
+        <h4><i class="fas fa-chevron-circle-right"></i> CÁCH LÀM CHO KHUÔN MẶT THON GỌN CHỈ BẰNG TẬP YOGA</h4>
+      </div>
+      <div class="tuvan22">
+        <h4><i class="fas fa-chevron-circle-right"></i> 4 BÍ QUYẾT GIÚP KHUÔN MẶT THON GỌN KHÔNG CẦN PHẪU THUẬT</h4>
+      </div>
+    </div>
+  </div>
+  <div class="banggia col-04">
+    <h2>$ BẢNG GIÁ</h2>
+    <div class="banggiaform">
+      <form action="#">
+        <center>
+          <label for="hoten"></label>
+          <input type="text" id="hoten" name="hoten" placeholder="Họ & tên">
+          <label for="sdt"></label>
+          <input type="text" id="sdt" name="sdt" placeholder="Số điện thoại">
+          <label for="email"></label>
+          <input type="text" id="email" name="email" placeholder="Email">
+          <label for="dv"></label>
+          <input type="text" id="dv" name="dv" placeholder="Dịch vụ quan tâm">
+          <input type="submit" value="Gửi">
+        </center>
+      </form>
+    </div>
+  </div>
+
+	<div class="clearfix"> </div>
+	<div class="space" style="width:100%; border-top: 1px solid rgba(203,203,201,1.00); margin-top: 500px"></div>
+	<img src="images/logo_doitac.jpg" class="img-res" />
+</div>
+	<footer>
+	<div class="containter">
+		<img src="images/logo-footer.png"  class="col-03"/>
+		<div class="col-06"><h2>VIỆN CHĂM SÓC DA & PHẪU THUẬT THẨM MỸ ADORA</h2>
+		<div style="width: 50%; float: left">
+			<h3>HỒ CHÍ MINH</h3>
+			Add: Số 60 Sương Nguyệt Ánh - Quận 1  Tel: 082 232 2222 - Hotline 094 625 5522</div>
+		<div style="width: 50%; float: left">
+			<h3>HÀ NỘI</h3>
+			Add: 25 Bùi Thị Xuân - Quận Hai Bà Trưng  Tel: 043 552 2222 - Hotline 096 118 2299</div>
+		</div>
+		<div class="col-03 ft" style="margin-top: 20px;padding: 10px;"><h3>HOTLINE 24/24: <strong style="font-size: 30px;">093 912 2222</strong></h3><br>
+<i class="fab fa-facebook-square fa-4x"></i><i class="fab fa-youtube fa-4x"></i><i class="fab fa-google-plus-square fa-4x"></i></div>
+		</div>
+	</footer>
 </body>
 </html>

@@ -7,15 +7,15 @@ body {
 	margin: 0 auto;
 	font-size: 14px;
 }
+.space {
+	height: 20px;
+}
 /*== header ==*/
 header {
 	height: 180px;
 	width: 100%;
 	background-image: url(../images/bg_header.jpg);
 	position: relative;
-}
-.space {
-	height: 65px;
 }
 .navigation ul {
 	list-style-type: none;
@@ -72,3 +72,220 @@ header {
 	margin-top: 6px;
 }
 /*== slider == */
+.slider {
+}
+/*== TIN TỨC ==*/
+.tintuc {
+	height: 345px;
+}
+.tintuc1 h4 {
+	color: #676765;
+}
+.tintuc2 {
+	margin-top: 60px;
+}
+.tintuc22 {
+	padding-top: 10px;
+	border-top: 1px solid #d8d7d5;
+	height: 120px;
+	float: left;
+}
+.tintuc22 img {
+	float: left;
+	padding-right: 10px;
+}
+.tintuc22 p {
+	margin-top: 5px 0
+}
+.tintuc22 p .act {
+	color: #aa0d78;
+}
+.tintuc22 p a {
+	text-decoration: none;
+	color: #676765;
+	text-transform: uppercase;
+}
+.cauchuyenkhachhang .dd {
+	min-height: 405px;
+	width: 365px;
+	background: #e8e7e3;
+	position: relative;
+}
+/*== Dịch vụ yêu thích == */
+.dichvu {
+	background-image: url(../images/bg.jpg);
+	min-height: 315px;
+}
+.dichvu h1 {
+	padding-top: 10px;
+	color: #f1f1f1;
+	font-size: 30px;
+}
+.dichvu img {
+	padding-left: 20px;
+}
+.dichvu div {
+	text-align: left;
+	padding: 20px;
+	color: #f1f1f1;
+}
+.dichvu div a {
+	text-decoration: none;
+	float: right;
+	color: #f1f1f1;
+	padding: 20px;
+}
+/*== Công nghệ làm đẹp cao cấp ==*/
+.cn {
+	cursor: pointer;
+}
+.cn a img {
+	padding-bottom: 0;
+}
+.cninfo {
+	height: 45px;
+	width: 100%;
+	background: #b80d7f;
+	padding-top: 0;
+}
+.cninfo center {
+	padding: 10px;
+}
+.cninfo center a {
+	padding-top: 10px;
+	text-align: center;
+	color: #f1f1f1;
+	margin-top: -4px;
+	text-decoration: none;
+}
+/*== Video, hình ảnh, khuyến mãi ==*/
+.vid {
+	margin: 10px;
+	min-height: 400px;
+	background: #e8e7e3;
+	position: relative;
+	width: 380px;
+}
+.vid h2 {
+	padding: 0 10px
+}
+.vid img {
+	padding: 0 10px;
+}
+.vid p {
+	background: #b80d7f;
+	height: 30px;
+	width: 90px;
+	line-height: 30px;
+	text-align: center;
+	color: #f1f1f1;
+	border-radius: 8%;
+	margin-left: 15px;
+	bottom: 10px;
+	position: absolute;
+}
+.pic {
+	margin: 10px;
+	height: 400px;
+	background: #e8e7e3;
+	width: 380px;
+	position: relative;
+}
+.pic h2 {
+	padding: 0 10px
+}
+.pic img {
+	padding: 10px;
+}
+.pic p {
+	background: #b80d7f;
+	height: 30px;
+	width: 90px;
+	line-height: 30px;
+	text-align: center;
+	color: #f1f1f1;
+	border-radius: 8%;
+	margin-left: 15px;
+	bottom: 10px;
+	position: absolute;
+}
+.km {
+	margin: 10px;
+	min-height: 400px;
+	background: #e8e7e3;
+	position: relative;
+	width: 380px;
+}
+.km h2 {
+	padding: 0 10px
+}
+.km img {
+	padding: 0 10px;
+}
+.km p {
+	background: #b80d7f;
+	height: 30px;
+	width: 90px;
+	line-height: 30px;
+	text-align: center;
+	color: #f1f1f1;
+	border-radius: 8%;
+	margin-left: 15px;
+	bottom: 10px;
+	position: absolute;
+}
+/*== TƯ VẤN ==*/
+.tuvan2 {
+	padding-top: 50px;
+}
+.tuvan22 {
+	border-bottom: 1px solid rgba(203,203,201,1.00);
+}
+.banggia {
+	margin-top: -10px;
+}
+.banggia h2 {
+	background: #b80d7f;
+	height: 40px;
+	line-height: 40px;
+	color: #f1f1f1;
+	padding-left: 10px;
+}
+.banggiaform {
+	background: #594b4b;
+	height: 403px;
+	margin-left: 10px;
+}
+.banggiaform form {
+	padding-top: 40px;
+}
+.banggiaform input {
+	width: 340px;
+	border-radius: 10px;
+	height: 50px;
+	margin: 10px;
+}
+.banggiaform input[type=text] {
+	padding: 10px;
+}
+.banggiaform input[type=submit] {
+	background: rgba(184,13,127,1.00);
+	border: none;
+	color: #f1f1f1;
+	font-size: 20px;
+	width: 80px;
+	text-align: center;
+	float: right;
+}
+/*== ĐỐI TÁC ==*/
+.space{}
+/*== FOOTER ==*/
+footer{
+	background: #382f30;
+	height: 220px;
+	padding: 20px;
+	color:#f1f1f1;
+}
+footer .ft i{
+	margin: 0 10px
+}
