@@ -24,7 +24,8 @@ header {
 .sticky {
 	position: fixed;
 	top: 0;
-	width: 100%;
+	width: 1400px;
+	z-index: 100;
 }
 .sticky + .content {
 	padding-top: 30px;
