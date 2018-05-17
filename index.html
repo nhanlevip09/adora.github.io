@@ -57,7 +57,9 @@ $(document).ready(function(){
 </script>
 <body>
 <!-- =============== HEADER =============== -->
-<header>
+<header><center>
+<img src="images/logo.png"  />
+</center>
   <div class="hotline fleft">
     <div class="fleft" style="height: 40px;
 	width:40px;
@@ -72,7 +74,7 @@ $(document).ready(function(){
     </div>
   </div>
   <center>
-    <nav class="navigation"> <img src="images/logo.png"  />
+    <nav class="navigation" id="navbar"> 
       <ul>
         <li class="active"><a href="#">TRANG CHỦ</a></li>
         <li><a href="#">DỊCH VỤ</a>
@@ -277,5 +279,19 @@ $(document).ready(function(){
       <i class="fab fa-facebook-square fa-4x"></i><i class="fab fa-youtube fa-4x"></i><i class="fab fa-google-plus-square fa-4x"></i></div>
   </div>
 </footer>
+	<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
 </body>
 </html>

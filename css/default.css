@@ -11,15 +11,30 @@ body {
 	height: 20px;
 }
 /*== header ==*/
+
 header {
 	height: 180px;
 	width: 100%;
 	background-image: url(../images/bg_header.jpg);
 	position: relative;
 }
+.content {
+	padding: 30px;
+}
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+.sticky + .content {
+	padding-top: 30px;
+}
+
 .navigation ul {
 	list-style-type: none;
 	background: #b80d7f;
+	padding: 0;
+	margin: 0;
 }
 .navigation ul li {
 	display: inline-block;
